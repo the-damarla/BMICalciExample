@@ -1,0 +1,57 @@
+body{
+    background: linear-gradient(to right, orange, black, yellow, whitesmoke);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+form{
+    align-content: center;
+    margin-left: 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+}
+
+.form-control input{
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.success small{
+    visibility: hidden;
+}
+
+#container {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+  }
+
+.mainDiv{
+    display: inline;
+    margin-top: 30px;
+    visibility: visible;
+    margin-left: 350px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.resultDivision{
+    visibility: hidden;
+}
+
+button{
+    align-content: center;
+    margin-left: 60px;
+}
+  

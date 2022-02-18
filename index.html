@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+</head>
+<body>
+    <div class="mainDiv" id="mainDivision">
+    <form id="form" action="/" method="GET" >
+        <div class="form-control">
+            <label for="name">NAME : </label>
+            <input type="text" id="name" name="userName" title="u"><br>
+            <small></small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password : </label>
+            <input type="password" id="pWord" name="password" title="p"><br>
+            <small></small>
+        </div>
+        <div class="form-control">
+            <label for="eMail">eMail : </label>
+            <input type="email" id="email" name="emailId" title="e"><br>
+            <small></small>
+        </div>
+        <div class="form-control">
+            <label for="height">Height : </label>
+            <input type="text" id="height" name="Height" title="e" placeholder="Enter in centiMetres..."><br>
+            <small></small>
+        </div>
+        <div class="form-control">
+            <label for="weight">Weight : </label>
+            <input type="text" id="weight" name="Weight" title="e" placeholder="Enter in kiloGrams.."><br>
+            <small></small>
+        </div>
+        <label id="finalError"></label><br>
+        <centre>
+        <button type="submit">Submit</button>
+        </centre>
+    </form>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    </div>
+    <div id="resultDivision">
+        <label id="givenName"></label><br>
+        <label id="givenHeight"></label><br>
+        <label id="givenWeight"></label><br>
+        <label id="bmiResult"></label><br>
+        <label id="res"></label>
+        <canvas id="resChart" style="width:100%;max-width:600px"></canvas>
+    </div>
+
+</body>
+</html>
